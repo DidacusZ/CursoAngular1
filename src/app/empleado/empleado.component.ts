@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EmpleadoComponent {
 
-  //nombre="Diego"
+  nombre="Diego"
   apellido="de la Prada";
   private edad=20;
 
@@ -39,4 +39,12 @@ export class EmpleadoComponent {
   llamaEmpresa(value:string){
 
   }
+
+  cambiaNombre(evento:Event){
+
+    this.nombre=(<HTMLInputElement>evento.target).value;
+
+  }
+
+
 }
