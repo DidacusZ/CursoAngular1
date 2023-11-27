@@ -12,9 +12,12 @@
 <br><br>
 <!-- 
 <p>Introduce el nombre del empleado [] <input type="text" #nombre (keyup)="0" [disabled]="habilitarCuadro"></p>
- -->
 
- <p>Introduce el nombre del empleado () <input type="text" (input)="cambiaNombre($event)"></p>
+
+<p>Introduce el nombre del empleado () <input type="text" (input)="cambiaNombre($event)"></p>
+-->
+
+<p>Introduce el nombre del empleado () <input type="text" [(ngModel)]="nombre"></p>
 
 
 <p>{{textoRegistro}}</p>
